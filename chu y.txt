@@ -1,0 +1,16 @@
+thiết lạp ban đầu với kho
+Phải đổ vào tb_NhapKho để còn tính NXT số chứng từ ví dụ: NKBTP 0
+
+
+khi insert dữ liệu ban đầu phải cho muahang, ban hang vao
+insert Chi tiết biến động TK kế toán
+TrangThai_MuaHang1_BanHang2_VAT3_
+
+
+đi vay=1 coi nhu ncc
+
+vat=3
+con lai =0
+
+Tam ứng tbThuChi. iBienMuaHang1_BanHang2_ConLai_0=9
+không lưu ChiTietThuChi
