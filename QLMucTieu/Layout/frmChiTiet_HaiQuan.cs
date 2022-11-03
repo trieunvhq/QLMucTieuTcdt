@@ -609,6 +609,166 @@ namespace QLMucTieu
                         }
                     }
 
+                    if (mota.Contains("Tàu HD"))
+                    {
+                        string[] cm = mota.Split(new string[] { "Tàu HD" }, StringSplitOptions.RemoveEmptyEntries);
+                        string tenMT = "";
+                        
+                        if (cm.Length > 1)
+                        {
+                            for (int j = 0; j < cm[1].Length; j++)
+                            {
+                                if (cm[1][j].ToString() == ":"
+                                    || cm[1][j].ToString() == "."
+                                    || cm[1][j].ToString() == ";"
+                                    || cm[1][j].ToString() == ")")
+                                    break;
+                                else
+                                {
+                                    tenMT += cm[1][j].ToString();
+
+                                    if (tenMT.Contains("Dự kiến"))
+                                    {
+                                        string[] tmp_ten = tenMT.Split(new string[] { "Dự kiến" }, StringSplitOptions.RemoveEmptyEntries);
+                                        tenMT = tmp_ten[0].Trim().Trim(',').Trim();
+                                        break;
+                                    }
+                                    else if (tenMT.Contains("Lúc"))
+                                    {
+                                        string[] tmp_ten = tenMT.Split(new string[] { "Lúc" }, StringSplitOptions.RemoveEmptyEntries);
+                                        tenMT = tmp_ten[0].Trim().Trim(',').Trim();
+                                        break;
+                                    }
+                                }
+                            }
+                        }
+                        else
+                        {
+                            for (int j = 0; j < cm[0].Length; j++)
+                            {
+                                if (cm[0][j].ToString() == ":"
+                                    || cm[0][j].ToString() == "."
+                                    || cm[0][j].ToString() == ";"
+                                    || cm[0][j].ToString() == ")")
+                                    break;
+                                else
+                                {
+                                    tenMT += cm[0][j].ToString();
+
+                                    if (tenMT.Contains("Dự kiến"))
+                                    {
+                                        string[] tmp_ten = tenMT.Split(new string[] { "Dự kiến" }, StringSplitOptions.RemoveEmptyEntries);
+                                        tenMT = tmp_ten[0].Trim().Trim(',').Trim();
+                                        break;
+                                    }
+                                    else if (tenMT.Contains("Lúc"))
+                                    {
+                                        string[] tmp_ten = tenMT.Split(new string[] { "Lúc" }, StringSplitOptions.RemoveEmptyEntries);
+                                        tenMT = tmp_ten[0].Trim().Trim(',').Trim();
+                                        break;
+                                    }
+                                }
+                            }
+                        }
+
+                        txtFullname.Text = "HD" + tenMT.Trim();
+                    }
+                    else if (mota.Contains("Tàu Hải dương"))
+                    {
+                        string[] cm = mota.Split(new string[] { "Tàu Hải dương" }, StringSplitOptions.RemoveEmptyEntries);
+                        string tenMT = "";
+
+                        if (cm.Length > 1)
+                        {
+                            for (int j = 0; j < cm[1].Length; j++)
+                            {
+                                if (cm[1][j].ToString() == ":"
+                                    || cm[1][j].ToString() == "."
+                                    || cm[1][j].ToString() == ";"
+                                    || cm[1][j].ToString() == ")")
+                                    break;
+                                else
+                                {
+                                    tenMT += cm[1][j].ToString();
+
+                                    if (tenMT.Contains("Dự kiến"))
+                                    {
+                                        string[] tmp_ten = tenMT.Split(new string[] { "Dự kiến" }, StringSplitOptions.RemoveEmptyEntries);
+                                        tenMT = tmp_ten[0].Trim().Trim(',').Trim();
+                                        break;
+                                    }
+                                    else if (tenMT.Contains("Lúc"))
+                                    {
+                                        string[] tmp_ten = tenMT.Split(new string[] { "Lúc" }, StringSplitOptions.RemoveEmptyEntries);
+                                        tenMT = tmp_ten[0].Trim().Trim(',').Trim();
+                                        break;
+                                    }
+                                }
+                            }
+                        }
+                        else
+                        {
+                            for (int j = 0; j < cm[0].Length; j++)
+                            {
+                                if (cm[0][j].ToString() == ":"
+                                    || cm[0][j].ToString() == "."
+                                    || cm[0][j].ToString() == ";"
+                                    || cm[0][j].ToString() == ")")
+                                    break;
+                                else
+                                {
+                                    tenMT += cm[0][j].ToString();
+
+                                    if (tenMT.Contains("Dự kiến"))
+                                    {
+                                        string[] tmp_ten = tenMT.Split(new string[] { "Dự kiến" }, StringSplitOptions.RemoveEmptyEntries);
+                                        tenMT = tmp_ten[0].Trim().Trim(',').Trim();
+                                        break;
+                                    }
+                                    else if (tenMT.Contains("Lúc"))
+                                    {
+                                        string[] tmp_ten = tenMT.Split(new string[] { "Lúc" }, StringSplitOptions.RemoveEmptyEntries);
+                                        tenMT = tmp_ten[0].Trim().Trim(',').Trim();
+                                        break;
+                                    }
+                                }
+                            }
+                        }
+                        
+                        txtFullname.Text = "HD" + tenMT.Trim();
+                    }
+                    else if (mota.Contains("Tàu Hải Dương"))
+                    {
+                        string[] cm = mota.Split(new string[] { "Tàu Hải Dương" }, StringSplitOptions.RemoveEmptyEntries);
+                        string tenMT = "";
+                        for (int j = 0; j < cm[1].Length; j++)
+                        {
+                            if (cm[1][j].ToString() == ":"
+                                || cm[1][j].ToString() == "."
+                                || cm[1][j].ToString() == ";"
+                                || cm[1][j].ToString() == ")")
+                                break;
+                            else
+                            {
+                                tenMT += cm[1][j].ToString();
+
+                                if (tenMT.Contains("Dự kiến"))
+                                {
+                                    string[] tmp_ten = tenMT.Split(new string[] { "Dự kiến" }, StringSplitOptions.RemoveEmptyEntries);
+                                    tenMT = tmp_ten[0].Trim().Trim(',').Trim();
+                                    break;
+                                }
+                                else if (tenMT.Contains("Lúc"))
+                                {
+                                    string[] tmp_ten = tenMT.Split(new string[] { "Lúc" }, StringSplitOptions.RemoveEmptyEntries);
+                                    tenMT = tmp_ten[0].Trim().Trim(',').Trim();
+                                    break;
+                                }
+                            }
+                        }
+                        txtFullname.Text = "HD" + tenMT.Trim();
+                    }
+
                     //
                     //
                     if (mota.ToLower().Contains("số hiệu"))
@@ -1209,6 +1369,136 @@ namespace QLMucTieu
                         }
                         FullName_ = "mã " + tenMT.Trim();
                     }
+                }
+
+
+                if (mota.Contains("Tàu HD"))
+                {
+                    string[] cm = mota.Split(new string[] { "Tàu HD" }, StringSplitOptions.RemoveEmptyEntries);
+                    string tenMT = "";
+                    
+                    if (cm.Length > 1)
+                    {
+                        for (int j = 0; j < cm[1].Length; j++)
+                        {
+                            if (cm[1][j].ToString() == ":"
+                                || cm[1][j].ToString() == "."
+                                || cm[1][j].ToString() == ";"
+                                || cm[1][j].ToString() == ")")
+                                break;
+                            else
+                            {
+                                tenMT += cm[1][j].ToString();
+
+                                if (tenMT.Contains("Dự kiến"))
+                                {
+                                    string[] tmp_ten = tenMT.Split(new string[] { "Dự kiến" }, StringSplitOptions.RemoveEmptyEntries);
+                                    tenMT = tmp_ten[0].Trim().Trim(',').Trim();
+                                    break;
+                                }
+                                else if (tenMT.Contains("Lúc"))
+                                {
+                                    string[] tmp_ten = tenMT.Split(new string[] { "Lúc" }, StringSplitOptions.RemoveEmptyEntries);
+                                    tenMT = tmp_ten[0].Trim().Trim(',').Trim();
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                    else
+                    {
+                        for (int j = 0; j < cm[0].Length; j++)
+                        {
+                            if (cm[0][j].ToString() == ":"
+                                || cm[0][j].ToString() == "."
+                                || cm[0][j].ToString() == ";"
+                                || cm[0][j].ToString() == ")")
+                                break;
+                            else
+                            {
+                                tenMT += cm[0][j].ToString();
+
+                                if (tenMT.Contains("Dự kiến"))
+                                {
+                                    string[] tmp_ten = tenMT.Split(new string[] { "Dự kiến" }, StringSplitOptions.RemoveEmptyEntries);
+                                    tenMT = tmp_ten[0].Trim().Trim(',').Trim();
+                                    break;
+                                }
+                                else if (tenMT.Contains("Lúc"))
+                                {
+                                    string[] tmp_ten = tenMT.Split(new string[] { "Lúc" }, StringSplitOptions.RemoveEmptyEntries);
+                                    tenMT = tmp_ten[0].Trim().Trim(',').Trim();
+                                    break;
+                                }
+                            }
+                        }
+                    }
+
+                    FullName_ = "HD" + tenMT.Trim();
+                }
+                else if (mota.Contains("Tàu Hải dương"))
+                {
+                    string[] cm = mota.Split(new string[] { "Tàu Hải dương" }, StringSplitOptions.RemoveEmptyEntries);
+                    string tenMT = "";
+                    
+                    if (cm.Length > 1)
+                    {
+                        for (int j = 0; j < cm[1].Length; j++)
+                        {
+                            if (cm[1][j].ToString() == ":"
+                                || cm[1][j].ToString() == "."
+                                || cm[1][j].ToString() == ";"
+                                || cm[1][j].ToString() == ")")
+                                break;
+                            else
+                            {
+                                tenMT += cm[1][j].ToString();
+
+                                if (tenMT.Contains("Dự kiến"))
+                                {
+                                    string[] tmp_ten = tenMT.Split(new string[] { "Dự kiến" }, StringSplitOptions.RemoveEmptyEntries);
+                                    tenMT = tmp_ten[0].Trim().Trim(',').Trim();
+                                    break;
+                                }
+                                else if (tenMT.Contains("Lúc"))
+                                {
+                                    string[] tmp_ten = tenMT.Split(new string[] { "Lúc" }, StringSplitOptions.RemoveEmptyEntries);
+                                    tenMT = tmp_ten[0].Trim().Trim(',').Trim();
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                    else
+                    {
+                        for (int j = 0; j < cm[0].Length; j++)
+                        {
+                            if (cm[0][j].ToString() == ":"
+                                || cm[0][j].ToString() == "."
+                                || cm[0][j].ToString() == ";"
+                                || cm[0][j].ToString() == ")")
+                                break;
+                            else
+                            {
+                                tenMT += cm[0][j].ToString();
+
+                                if (tenMT.Contains("Dự kiến"))
+                                {
+                                    string[] tmp_ten = tenMT.Split(new string[] { "Dự kiến" }, StringSplitOptions.RemoveEmptyEntries);
+                                    tenMT = tmp_ten[0].Trim().Trim(',').Trim();
+                                    break;
+                                }
+                                else if (tenMT.Contains("Lúc"))
+                                {
+                                    string[] tmp_ten = tenMT.Split(new string[] { "Lúc" }, StringSplitOptions.RemoveEmptyEntries);
+                                    tenMT = tmp_ten[0].Trim().Trim(',').Trim();
+                                    break;
+                                }
+                            }
+                        }
+                    }
+
+                    FullName_ = "HD" + tenMT.Trim();
                 }
 
                 //
