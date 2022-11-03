@@ -570,7 +570,8 @@ namespace QLMucTieu
                             {
                                 if (cm[1][j].ToString() == ":"
                                     || cm[1][j].ToString() == "."
-                                    || cm[1][j].ToString() == ";")
+                                    || cm[1][j].ToString() == ";"
+                                    || cm[1][j].ToString() == ")")
                                     break;
                                 else
                                 {
@@ -624,7 +625,8 @@ namespace QLMucTieu
                             {
                                 if (cm[1][j].ToString() == ":"
                                     || cm[1][j].ToString() == "."
-                                    || cm[1][j].ToString() == ";")
+                                    || cm[1][j].ToString() == ";"
+                                    || cm[1][j].ToString() == ")")
                                     break;
                                 else
                                 {
@@ -798,7 +800,8 @@ namespace QLMucTieu
                                 if (cm[1][j].ToString() == ":"
                                     || cm[1][j].ToString() == "."
                                     || cm[1][j].ToString() == ","
-                                    || cm[1][j].ToString() == ";")
+                                    || cm[1][j].ToString() == ";"
+                                    || cm[1][j].ToString() == ")")
                                     break;
                                 else
                                 {
@@ -853,7 +856,8 @@ namespace QLMucTieu
                                 if (cm[1][j].ToString() == ":"
                                     || cm[1][j].ToString() == "."
                                     || cm[1][j].ToString() == ","
-                                    || cm[1][j].ToString() == ";")
+                                    || cm[1][j].ToString() == ";"
+                                    || cm[1][j].ToString() == ")")
                                     break;
                                 else
                                 {
@@ -1344,7 +1348,8 @@ namespace QLMucTieu
                         {
                             if (cm[1][j].ToString() == ":"
                                 || cm[1][j].ToString() == "."
-                                || cm[1][j].ToString() == ";")
+                                || cm[1][j].ToString() == ";"
+                                || cm[1][j].ToString() == ")")
                                 break;
                             else
                             {
@@ -1397,7 +1402,8 @@ namespace QLMucTieu
                         {
                             if (cm[1][j].ToString() == ":"
                                 || cm[1][j].ToString() == "."
-                                || cm[1][j].ToString() == ";")
+                                || cm[1][j].ToString() == ";"
+                                || cm[1][j].ToString() == ")")
                                 break;
                             else
                             {
@@ -1570,7 +1576,8 @@ namespace QLMucTieu
                             if (cm[1][j].ToString() == ":"
                                 || cm[1][j].ToString() == "."
                                 || cm[1][j].ToString() == ","
-                                || cm[1][j].ToString() == ";")
+                                || cm[1][j].ToString() == ";"
+                                || cm[1][j].ToString() == ")")
                                 break;
                             else
                             {
@@ -1624,7 +1631,8 @@ namespace QLMucTieu
                             if (cm[1][j].ToString() == ":"
                                 || cm[1][j].ToString() == "."
                                 || cm[1][j].ToString() == ","
-                                || cm[1][j].ToString() == ";")
+                                || cm[1][j].ToString() == ";"
+                                || cm[1][j].ToString() == ")")
                                 break;
                             else
                             {
